@@ -1,0 +1,14 @@
+cmake_minimum_required(VERSION 3.10)
+
+project(Project_1)
+
+# Add C++ standard
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# Add executable
+add_executable(${PROJECT_NAME} src/detection.cpp)
+
+# Note: This version doesn't include OpenCV
+# You'll need to comment out OpenCV-specific code in detection.cpp
+# or install OpenCV and use the original CMakeLists.txt
